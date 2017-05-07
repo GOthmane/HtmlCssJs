@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+div{
+	background-color:orange;
+	width:400px;
+	border:5px solid black;
+	border-radius:15px;
+}
+
+.p1{
+	position: static;
+	/* static empêche de pouvoir faire bouger l'élément*/
+	top:100px;
+	left:50px;
+}
+
+.p2{
+	position: relative;
+	left:50px;
+}
+
+h1{
+	background-color:blue;
+	width:200px;
+	border:5px solid red;
+	border-radius:15px;
+	/* fixed permet de fixer l'élément lors du défilement */
+	position:fixed;
+	top:0px;
+	left:200px;
+	text-align:center;
+	z-index:3;
+}
+h2{
+	background-color:green;
+	/* fixed permet de fixer l'élément lors du défilement */
+	position:absolute;
+	top:10px;
+	left:130px;
+	z-index:2;
+}
